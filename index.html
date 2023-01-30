@@ -7,24 +7,226 @@
     <title>Changwon National University</title>
     <link rel="icon" href="./images/logo.jfif">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
-    <section class="header">
+    <div class="header">
         <nav>
             <a href="index.html"><img src="./images/logo7.jfif" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">COURSE</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">홈</a></li>
+                    <li><a href="">우리에 대해</a></li>
+                    <li><a href="">강의</a></li>
+                    <li><a href="">연락</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    </section>
 
+        <div class="text-box">
+            <h1>세계 최대 대학</h1>
+            <p>창원대학교는 대한민국 최고의 지식을 습득할 수 있는 최고의 공립대학교 중 하나입니다</p>
+            <a href="" class="btn">자세히 알아보려면 방문하세요</a>
+        </div>
+    </div>
+
+    <!-- Course -->
+    <div class="course">
+        <div class="container">
+            <h1>우리가 제공하는 과정</h1>
+            <p>우리 대학은 다양한 분야에서 많은 고품질 과정을 제공합니다</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>학사 학위</h3>
+                    <ul>
+                        <li>경영학</li>
+                        <li>경제학</li>
+                        <li>컴퓨터 과학</li>
+                        <li>기계 공학</li>
+                        <li>영어와 문학</li>
+                    </ul>
+                </div>
+                <div class="course-col">
+                    <h3>석사 학위</h3>
+                    <ul>
+                        <li>경영학</li>
+                        <li>경제학</li>
+                        <li>컴퓨터 과학</li>
+                        <li>기계 공학</li>
+                        <li>영어와 문학</li>
+                    </ul>
+                </div>
+                <div class="course-col">
+                    <h3>박사</h3>
+                    <ul>
+                        <li>경영학</li>
+                        <li>경제학</li>
+                        <li>컴퓨터 과학</li>
+                        <li>기계 공학</li>
+                        <li>영어와 문학</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Campus -->
+    <div class="campus">
+        <div class="container">
+            <h1>글로벌 캠퍼스</h1>
+            <p>다음 사진에서 일부 풍경 캠퍼스 건물을 관찰할 수 있습니다</p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="./images/logo3.jfif" alt="">
+                    <div class="layer">
+                        <h3>국제교류처</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="./images/building.jpg" alt="">
+                    <div class="layer">
+                        <h3>캠퍼스 본관</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="./images/cwnu.jpg" alt="">
+                    <div class="layer">
+                        <h3>대학 입학</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities -->
+    <div class="facility">
+        <div class="container">
+            <h1>우리 시설</h1>
+            <p>창원대학교는 학생들을 위한 다양한 학업 및 여가 시설을 제공합니다</p>
+
+            <div class="row">
+                <div class="facility-col">
+                    <img src="./images/library.jpg" alt="">
+                    <h3>세계적 수준의 도서관</h3>
+                    <p>도서관에서 공부하는 동안 유용한 다양한 학술 서적을 찾을 수 있습니다</p>
+                </div>
+                <div class="facility-col">
+                    <img src="./images/stadium.jpg" alt="">
+                    <h3>가장 큰 놀이터</h3>
+                    <p>대학 운동장은 학생들에게 축구, 장거리 달리기 등과 같은 스포츠 활동을 할 수 있는 기회를 제공합니다</p>
+                </div>
+                <div class="facility-col">
+                    <img src="./images/cafe.jpg" alt="">
+                    <h3>맛있고 건강한 음식</h3>
+                    <p>학생들은 점심 시간에 대학 식당에서 건강하고 맛있는 음식을 즐깁니다</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <div class="container">
+        <h1>우리 학생이 말하는 것</h1>
+        <p>우리 대학 졸업생들은 다음 의견에서 경험을 공유합니다</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                    <img src="./images/MyImage.jpg" alt="">
+                    <div>
+                        <p>창원대학교는 학업과 사회생활 모두에서 새로운 모험으로 가득 차 있습니다. 나는 매우 지적이고 유용한 교수들로부터 지식을 얻었습니다. 나는 새로운 친구들을 만났고 우리의 지식을 함께 공유했으며 이것은 나에게 멋진 경험이었습니다.</p>
+                        <h3>Mukhammadjon Isokjonov</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="./images/student.jpg" alt="">
+                    <div>
+                        <p>저는 컴퓨터 과학 분야에서 공부했고 많은 기술과 지식을 얻었습니다. 학업 시설 외에도 우리 대학은 많은 과외 활동을 제공했으며 저는 이 대학에서 많은 것을 즐겼습니다.</p>
+                        <h3>Bred Wilson</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call To Action -->
+    <div class="cta">
+        <h1>다양한 온라인 과정에 등록하세요 <br>전 세계 어디에서나</h1>
+        <a href="" class="btn">문의하기</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container grid">
+            <div class="footer-left">
+                <h3>창원 <span>대학교</span></h3>
+                <p class="footer-links">
+                    <a href="">홈</a>
+                    |
+                    <a href="">우리에 대해</a>
+                    |
+                    <a href="">강의</a>
+                    |
+                    <a href="">연락</a>
+                </p>
+                <p class="footer-name">저작권 &copy; 2023 <br><strong>창원 대학교</strong> <br>판권 소유</p>
+            </div>
+
+            <div class="footer-center">
+                <div class="flex">
+                    <i class="fa fa-map-marker"></i> 
+                    <p> 대한민국의 경상남도 창원시 의창구 창원대학로 20</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-phone"></i>
+                    <p>+82 55 213 2114</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-envelope"></i> 
+                    <p><a href="">changwon@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>창원대학교 소개</span>
+                    <strong>창원대학교</strong> 대한민국 창원에 있는 최고의 대학 중 하나입니다. 고도로 지능적인 교수로부터 다양한 분야의 지식을 얻을 수 있습니다.
+                </p>
+                <div class="footer-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
+    <!-- Javascript For Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
